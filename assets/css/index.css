@@ -23,6 +23,7 @@ body {
 .hero-text {
 	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 	font-size: 5rem;
+	user-select: none;
 	background: -webkit-linear-gradient(37deg, #e0e, #eee);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
