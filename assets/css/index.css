@@ -1,0 +1,29 @@
+body {
+	background-image: url('/assets/img/andrei.jpg');
+	background-repeat: repeat;
+	background-size: 7%;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	animation: animatedBackground 100000s linear infinite; /* FIXME: Please fix this janky anim code */
+}
+
+@keyframes animatedBackground {
+	from {
+	  background-position: 0 0;
+	}
+	to {
+	  background-position: 1000000% 0;
+	}
+  }
+
+.hero-text {
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	font-size: 5rem;
+	background: -webkit-linear-gradient(37deg, #e0e, #eee);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0.15rem #333333aa;	
+}
