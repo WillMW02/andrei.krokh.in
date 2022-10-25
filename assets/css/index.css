@@ -4,10 +4,6 @@ body {
 	background-repeat: repeat;
 	background-size: 7%;
 	background-position: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
 	animation: animatedBackground 100000s linear infinite; /* FIXME: Please fix this janky anim code */
 }
 
@@ -20,12 +16,27 @@ body {
 	}
   }
 
-.hero-text {
+.andrei-time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 	font-size: 5rem;
 	user-select: none;
 	background: -webkit-linear-gradient(37deg, #e0e, #eee);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0.15rem #333333aa;
+}
+
+.hero-text {
+	font-size: 5rem;
 	-webkit-text-stroke: 0.15rem #333333aa;	
+}
+
+.footer-link {
+	position: absolute;
+	bottom: 0.75rem;
+	font-size: 1.5rem;
 }
